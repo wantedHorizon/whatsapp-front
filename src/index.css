@@ -18,7 +18,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+input {
+  outline-width: 0;
+}
 :root {
   --beige: #e5ddd5;
   --beige-rgb: 229, 221, 213;
