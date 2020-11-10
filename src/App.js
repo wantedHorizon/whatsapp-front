@@ -1,9 +1,16 @@
 import './App.css';
+import Chat from './containers/Chat/Chat';
+import Sidebar from './containers/Sidebar/Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Build mern-stack</h1>
+    <div className="app">
+
+      <div className="app__body">
+        <Sidebar />
+        <Chat />
+
+      </div>
     </div>
   );
 }
