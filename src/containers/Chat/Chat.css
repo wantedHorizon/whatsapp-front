@@ -3,3 +3,50 @@
   flex-direction: column;
   flex: 0.65;
 }
+
+.chat__header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  /* justify-content: space-between; */
+}
+
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.chat__headerInfo > p {
+  color: grey;
+}
+
+.chat__headerInfo > h3 {
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.chat__body {
+  position: relative;
+  flex: 1;
+  z-index: 1;
+  padding: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #e5ddd5;
+}
+
+.chat__body::before {
+  content: "";
+
+  background-image: url("https://web.whatsapp.com/img/bg-chat-tile-light_686b98c9fdffef3f63127759e2057750.png");
+  position: absolute;
+  background-repeat: repeat;
+  background-position: center;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.1;
+}
